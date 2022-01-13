@@ -1,10 +1,16 @@
 const { Client, version } = require('discord.js');
 
+  const ping = new Date();
+
+  ping.setHours(ping.getHours() - 3);
+
+  console.log(`Ping recebido às ${ping.getUTCHours()}:${ping.getUTCMinutes()}:${ping.getUTCSeconds()}`);
+
 const { 
 
-    token, 
+    token
 
-     } = require('./config.json')
+} = require('./config.json')
 
 const bot = new Client();
 
@@ -12,15 +18,15 @@ bot.on("ready", async() => {
 
     console.log(`[ Client ] ${bot.user.tag} Is Now Online`);
 
-    bot.user.setPresence({
+  bot.user.setPresence({
 
-        status: 'dnd',
+        status: 'idle',
 
         activity: {
 
-            name: 'DADOS PARA SERVIDORES',
+            name: 'EQUIPE!',
 
-            type: 'STREAMING',
+            type: 'PLAYING',
 
         }
 
