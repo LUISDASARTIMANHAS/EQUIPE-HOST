@@ -8,7 +8,7 @@ bot.on("ready", async() => {
     bot.user.setPresence({
         status: 'IDLE',
         activity: {
-            name: "PINGOBRAS HOST.glitch.me",
+            name: "pingobras.glitch.me" + new Date().getFullYear(),
             type: "PLAYING",
         }
     })
