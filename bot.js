@@ -9,7 +9,7 @@ bot.on("ready", async() => {
         status: 'idle',
         activity: {
             name: "pingobras.glitch.me" + new Date().getFullYear(),
-            type: "playing",
+            type: "PLAYING",
         }
     })
 })
